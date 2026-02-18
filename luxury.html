@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance - The Luxury Edition</title>
+    <link rel="stylesheet" href="style-luxury.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Elegant Border -->
+    <div class="frame-border"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+
+    <!-- Minimal Loader -->
+    <div class="loader">
+        <div class="loader-logo">E</div>
+        <div class="loader-progress">0%</div>
+    </div>
+
+    <!-- Dynamic Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-letter">E</span>
+                <span class="logo-text">legance</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active" data-page="home">Home</a>
+                <a href="#collection" class="nav-link" data-page="collection">Collection</a>
+                <a href="#about" class="nav-link" data-page="about">About</a>
+                <a href="#gallery" class="nav-link" data-page="gallery">Gallery</a>
+                <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+            </div>
+
+            <div class="nav-controls">
+                <div class="slider-container">
+                    <label for="opacity-slider" class="slider-label">Opacity</label>
+                    <input type="range" id="opacity-slider" min="0" max="100" value="80" class="slider">
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#home" class="mobile-link" data-page="home">Home</a>
+            <a href="#collection" class="mobile-link" data-page="collection">Collection</a>
+            <a href="#about" class="mobile-link" data-page="about">About</a>
+            <a href="#gallery" class="mobile-link" data-page="gallery">Gallery</a>
+            <a href="#contact" class="mobile-link" data-page="contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Canvas -->
+    <canvas id="hero-lightpass"></canvas>
+
+    <!-- Page Container -->
+    <div class="pages-container">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <h1 class="hero-title">
+                        <span class="word">Timeless</span>
+                        <span class="word italic">Creation</span>
+                    </h1>
+                    <p class="hero-subtitle">Define your legacy.</p>
+                </div>
+                <div class="spacer-content"></div>
+            </div>
+        </div>
+
+        <!-- Collection Page -->
+        <div id="collection" class="page">
+            <div class="page-header">
+                <h2 class="page-title">Our Collection</h2>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <h3>Elegance Series</h3>
+                    <p>Timeless designs crafted with perfection</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <h3>Luxury Premium</h3>
+                    <p>Exclusive limited edition pieces</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <h3>Golden Dreams</h3>
+                    <p>Handcrafted masterpieces</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <h3>Elite Collection</h3>
+                    <p>Premium quality assurance</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <div class="about-content">
+                <div class="about-section">
+                    <h2>About Elegance</h2>
+                    <p>We craft timeless pieces that embody luxury and sophistication. Each creation tells a story of dedication, artistry, and excellence.</p>
+                </div>
+                <div class="about-section">
+                    <h2>Our Vision</h2>
+                    <p>To redefine luxury through innovative design and impeccable craftsmanship. We believe that true elegance is timeless and transcends trends.</p>
+                </div>
+                <div class="features-slider">
+                    <div class="slider-title">Touch to explore features</div>
+                    <div class="slider-wrapper">
+                        <div class="slider-track">
+                            <div class="feature-item">Premium Quality</div>
+                            <div class="feature-item">Handcrafted</div>
+                            <div class="feature-item">Sustainable</div>
+                            <div class="feature-item">Innovative</div>
+                            <div class="feature-item">Exclusive</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Page -->
+        <div id="gallery" class="page">
+            <div class="gallery-header">
+                <h2>Visual Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <div class="contact-content">
+                <h2>Get In Touch</h2>
+                <div class="contact-info">
+                    <div class="info-block">
+                        <h3>Address</h3>
+                        <p>Luxury Street, Golden City 12345</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Email</h3>
+                        <p>hello@elegance.luxury</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Phone</h3>
+                        <p>+1 (234) 567-8900</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+    <!-- Luxury Script -->
+    <script src="script-luxury.js"></script>
+</body>
+</html>
